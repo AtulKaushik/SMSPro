@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SMSPro</string>
+    <string name="description"></string>
+    <string name="socialsmsactivity_label">Device Messages</string>
+    <string name="google_address_summary">Email address of your gmail account</string>
+    <string name="google_password_summary">Password of the gmail account</string>
+    <string name="import_range_summary">max no. of mails to be imported at a time</string>
+    <string name="settings">Settings</string>
+    <string name="share_screen_header">Share it with friends</string>
+    <string name="facebook_activity">Share with Facebook friends</string>
+    <string name="facebook">Facebook</string>
+    <string name="tweet">Tweet</string>
+    <string name="save">Save</string>
+    <string name="date_">"Date : "</string>
+    <string name="sender_">"Sender : "</string>
+    <string name="export">Export</string>
+    <string name="import_">Import</string>
+    <string name="phone_inbox_is_empty">Phone Inbox is empty</string>
+    <string name="export_label">Export</string>
+    <string name="mail_inbox_is_empty">No mails to import</string>
+    <string name="import_label">Import</string>
+    <string name="msgs_to_import_label">Select Messages to Import</string>
+    <string name="about">About</string>
+    <string name="msgs_to_export_label">Select Messages to Export</string>
+    <string name="twitter_activity">Tweet it</string>
+    <string name="app_desc">There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.</string>
+
+</resources>

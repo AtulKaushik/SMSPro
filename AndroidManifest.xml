@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mobilleon.smspro.root"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="9" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.mobilleon.smspro.application.SMSProApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.mobilleon.smspro.activity.SpanningActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mobilleon.smspro.activity.SMSProActivity"
+            android:label="@string/socialsmsactivity_label"
+            android:theme="@style/Theme.Styled"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mobilleon.smspro.activity.SMSProSettingsActivity"
+            android:label="@string/settings"
+            android:theme="@style/Theme.Styled"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name="com.mobilleon.smspro.activity.FacebookActivity"
+            android:label="@string/facebook_activity" >
+        </activity>
+        <activity
+            android:name="com.mobilleon.smspro.activity.MessageExportActivity"
+            android:label="@string/msgs_to_export_label"
+            android:theme="@style/Theme.Styled"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name="com.mobilleon.smspro.activity.MessageImportActivity"
+            android:label="@string/msgs_to_import_label"
+            android:theme="@style/Theme.Styled"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name="com.mobilleon.smspro.activity.AboutActivity"
+            android:label="@string/about"
+            android:theme="@style/Theme.Styled"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:screenOrientation="portrait"  >
+        </activity>
+        <activity
+            android:name="com.mobilleon.smspro.activity.ShareAndSaveActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Styled"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="callback"
+                    android:scheme="x-oauthflow-twitter" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

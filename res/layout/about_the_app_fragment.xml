@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/span"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:id="@+id/brand_container"
+        android:layout_marginTop="35dp"
+        android:padding="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/list_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/app_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMSPro"
+            android:textColor="@color/l_blue"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/app_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version 3.1" />
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/gray_divider" />
+
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/app_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_desc" />
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_below="@id/brand_container"
+        android:id="@+id/donation_container"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_height="100dp"
+        android:layout_width="fill_parent">
+        <TextView
+            android:id="@+id/donate"
+            style="@style/layout_wrap"
+            android:text="Is this app useful?"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <ImageView 
+            android:layout_height="70dp"
+            android:layout_width="120dp"
+            android:src="@drawable/ic_paypal"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/donation_container"
+        android:layout_marginTop="35dp"
+        android:padding="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/list_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+        
+        <ListView 
+            android:id="@+id/app_list"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:cacheColorHint="#FFFFFF"
+            android:scrollbars="none"/>
+    </LinearLayout>
+</RelativeLayout>
